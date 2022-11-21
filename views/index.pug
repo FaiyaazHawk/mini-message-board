@@ -2,9 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to a #{title}
 
   h2= "Messages"
+  a.btn(href="/new") Add a message
   each val in messages 
     .message
       h3= val.user
